@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int putchar();
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
