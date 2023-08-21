@@ -1,3 +1,3 @@
-echo -e '#include <time.h>\nunsigned int time(unsigned int *t) { return 12345; }' > time.c
-gcc -shared time.c -o time.so
-export LD_PRELOAD=$PWD/time.so
+#!/bin/bash
+wget -P .. https://raw.githubusercontent.com/monoprosito/holbertonschool-low_level_programming/master/0x18-dynamic_libraries/libgiga.so
+export LD_PRELOAD="$PWD/../libgiga.so"
